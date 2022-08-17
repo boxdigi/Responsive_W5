@@ -23,13 +23,12 @@ p {
     font-weight: normal;
     font-size: 18px;
     line-height: 30px;
-    margin: 45px;
 }
 
 .hero {
     background: var(--background-color);
     text-align: center;
-    padding: 100px 20px 50px 20px;
+    padding: 160px 20px;
 }
 
 .hero p {
@@ -39,13 +38,7 @@ p {
     color: var(--text-color);
 }
 
-.project-description p,
-.project-description a {
-    margin-left: 0;
-}
-
-.hero h2,
-.about h2 {
+.hero h2 {
     color: var(--text-color);
     line-height: 2;
     font-weight: lighter;
@@ -53,21 +46,9 @@ p {
     font-size: 24px;
 }
 
-.about,
-#contact {
-    background: var(--background-color);
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.bg-custom {
-    background: var(--background-color);
-}
-
-.mail-link {
-    text-decoration: none;
-    font-size: 35px;
-    color: var(--branding-color);
+.project-description p,
+.project-description a {
+    margin-left: 0;
 }
 
 .btn-branding {
@@ -90,9 +71,33 @@ p {
     margin: 20px;
 }
 
+.about {
+    padding: 160px 20px;
+}
+
+.about-description {
+    margin: 20px;
+}
+
+.about h1 {
+    font-size: 64px;
+}
+
+.about h2 {
+    font-size: 18px;
+    font-family: var(--secondary-font-family);
+}
+
+
 @media(min-width:992px) {
     .project-description {
         padding: 60px 30px 30px 60px;
+    }
+
+    .about h1,
+    .about h2,
+    .about p {
+        margin: 20px;
     }
 }
 
@@ -107,23 +112,14 @@ p {
         padding-top: 15px;
     }
 
-    #contact h2 {
-        font-size: 35px;
-    }
-
-    #contact {
-        padding: 20px;
-    }
-
-
     .hero,
     .about {
         padding: 60px 20px 20px 20px;
     }
 
-    .mail-link {
-        font-size: 24px;
-        margin-bottom: 20px;
+    .about {
+        text-align: center;
+
     }
 }
 
