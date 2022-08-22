@@ -97,6 +97,37 @@ p {
     font-family: var(--secondary-font-family);
 }
 
+.logo {
+    max-height: 40px;
+}
+
+nav {
+    padding: 20px 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    line-height: 42px;
+    margin-left: 15px;
+}
+
+nav a {
+    transition: all 100ms ease-in-out;
+    text-decoration: none;
+    color: #272142;
+}
+
+nav a:hover,
+nav li.active a {
+    color: var(--branding-color)
+}
+
 .works-description h1 {
     font-size: 62px;
     line-height: 80px;
@@ -150,12 +181,16 @@ p {
     .hero,
     .about,
     .works {
-        padding: 60px 20px 20px 20px;
+        padding: 20px;
     }
 
     .about,
     .works {
         text-align: center;
+    }
+
+    nav li {
+        margin-left: 5px;
     }
 }
 
